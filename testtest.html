@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GenZ · Mental Health</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700;900&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --fg:#fff;
+      --tint: rgba(0,0,0,.48);
+      --band: rgba(0,0,0,.60);
+      --header-h: 56px;}
+    *{ box-sizing:border-box; }
+    html,body{ height:100%; }
+    body{ margin:0; color:var(--fg); background:#000; font-family:"Noto Sans KR","Malgun Gothic","Apple SD Gothic Neo",system-ui,sans-serif; }
+
+    header{
+      position:fixed; inset:0 0 auto 0; height:var(--header-h);
+      display:flex; align-items:center; justify-content:space-between;
+      padding:0 14px; z-index:100;
+      background:rgba(8,10,14,.6); backdrop-filter:saturate(120%) blur(8px);
+      border-bottom:1px solid rgba(255,255,255,.08);
+    }
+    header nav a{color:#fff;text-decoration:none;margin-left:10px;padding:6px 8px;border-radius:6px}
+    header nav a:hover{background:rgba(255,255,255,.09)}
+    footer{margin-top:24px;text-align:center;padding:18px 12px;color:#cfd8e3;border-top:1px solid rgba(255,255,255,.08);background:#0b0d12}
+
+    section{position:relative;min-height:100vh;overflow:hidden}
+    section:first-of-type{margin-top:var(--header-h)}
+    .cap{position:absolute;max-width:min(900px,92%);padding:18px;text-shadow:0 2px 14px rgba(0,0,0,.55)}
+    .cap h1,.cap h2{margin:0 0 8px;font-weight:900;line-height:1.12}
+    .cap h1{font-size:clamp(28px,6vw,54px)}
+    .cap h2{font-size:clamp(24px,5vw,44px)}
+    .cap p{margin:6px 0 0;font-size:clamp(14px,2.6vw,18px);opacity:.95}
+
+    .bg{position:absolute;inset:0;background-size:cover;background-position:center;z-index:-2;filter:saturate(1.06) contrast(1.05)}
+    .tint{position:absolute;inset:0;background:var(--tint);z-index:-1}
+    .band{position:absolute;left:0;right:0;bottom:0;height:42%;background:linear-gradient(180deg,transparent,var(--band) 60%,var(--band))}
+
+    .fit-wrap{position:absolute;inset:0;display:grid;place-items:center;background:#000}
+    .fit-wrap img{max-width:100%;max-height:100%;width:auto;height:auto;display:block;filter:saturate(1.06) contrast(1.05)}
+    .fit-tint{position:absolute;inset:0;background:var(--tint)}
+    .fit-band{position:absolute;left:0;right:0;bottom:0;height:38%;background:linear-gradient(180deg,transparent,var(--band))}
+
+    .tl{top:12vh;left:6%}
+    .tr{top:12vh;right:6%;text-align:right}
+    .bl{bottom:12vh;left:6%}
+    .br{bottom:12vh;right:6%;text-align:right}
+    .cc{top:50%;left:50%;transform:translate(-50%,-50%);text-align:center}
+
+    @media (max-width:560px){
+      :root{--header-h:50px}
+      header{height:var(--header-h)}
+      header nav{display:none}
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div>Gen Z · Mental Health</div>
+  <nav aria-label="슬라이드 바로가기">
+    <a href="#s1">1</a><a href="#s2">2</a><a href="#s3">3</a><a href="#s4">4</a>
+    <a href="#s5">5</a><a href="#s6">6</a><a href="#s7">7</a><a href="#s8">8</a><a href="#s9">9</a><a href="#s10">10</a>
+  </nav>
+</header>
+
+<section id="s1">
+  <div class="fit-wrap">
+    <img src="ehlel.png" alt="폭풍 속의 세대 — 표지">
+    <div class="fit-tint"></div>
+    <div class="fit-band"></div>
+  </div>
+  <div class="cap bl">
+    <h1>폭풍 속의 세대</h1>
+    <p>사방에서 몰려오는 파도 속에서 균형을 찾는 여정.</p>
+  </div>
+</section>
+
+<section id="s2">
+  <div class="bg" style="background-image:url('zurag2.png')"></div>
+  <div class="tint" style="background:rgba(120,0,0,.34)"></div>
+  <div class="band" style="background:linear-gradient(180deg,transparent,rgba(120,0,0,.5),rgba(120,0,0,.55))"></div>
+  <div class="cap cc">
+    <h2>이 파도들은 무엇일까요?</h2>
+    <p>전쟁 · 경제 · 기후 · 뉴스 — 겹겹의 잔상.</p>
+  </div>
+</section>
+
+<section id="s3">
+  <div class="bg" style="background-image:url('zurag3.png')"></div>
+  <div class="tint"></div><div class="band"></div>
+  <div class="cap br">
+    <h2>기술의 쓰나미</h2>
+    <p>플랫폼, 애플리케이션, 디지털 기기 등은 끊임없이 변화하고 있다. Z세대는 새로운 기술을 빠르게 습득하고 적응해야 하며, 변화의 속도는 지속적인 압박으로 작용하고 있다.</p>
+  </div>
+</section>
+
+<section id="s4">
+  <div class="bg" style="background-image:url('zurag4.png')"></div>
+  <div class="tint"></div><div class="band"></div>
+  <div class="cap tl">
+    <h2>정보 과부하</h2>
+    <p>오늘날 사회는 정보의 과잉 상태에 놓여 있다. 뉴스 속보, 소셜 미디어의 피드, 디지털 알림은 개인의 집중력을 약화시키고 정신적 피로를 유발하고 있다.</p>
+  </div>
+</section>
+
+<section id="s5">
+  <div class="bg" style="background-image:url('zurag5.png')"></div>
+  <div class="tint" style="background:rgba(120,60,40,.32)"></div>
+  <div class="band" style="background:linear-gradient(180deg,transparent,rgba(120,60,40,.5),rgba(120,60,40,.55))"></div>
+  <div class="cap tl">
+    <h2>멀리 있어도 느껴지는 두려움</h2>
+    <p>전장에 없더라도 불안은 번진다.</p>
+  </div>
+</section>
+
+<section id="s6">
+  <div class="bg" style="background-image:url('zurag6.png')"></div>
+  <div class="tint"></div><div class="band"></div>
+  <div class="cap bl">
+    <h2>AI와 함께 흔들리는 자아</h2>
+    <p>“나는 어떤 일을 해야 할까?”라는 질문이 깊어진다.</p>
+  </div>
+</section>
+
+<section id="s7">
+  <div class="bg" style="background-image:url('zurag7.png')"></div>
+  <div class="tint" style="background:rgba(230,60,30,.2)"></div>
+  
+  <div class="cap cc">
+    <h2>우리가 짊어진 무게</h2>
+    <p>불안정한 고용, 주거비 상승, 생활비 부담은 Z세대에게 심각한 압박으로 작용하고 있다. 이들은 장기적 미래보다 단기적 생존을 우선시할 수밖에 없는 상황에 놓여 있다.</p>
+  </div>
+</section>
+
+<section id="s8">
+  <div class="bg" style="background-image:url('zurag8.png')"></div>
+  <div class="tint"></div><div class="band"></div>
+  <div class="cap bl">
+    <h2>가족과 사회의 기대</h2>
+    <p>“좋은 직장, 안정된 삶”—그 파도 속에서 자신을 찾는다.부모 세대와 사회의 기대는 격려가 되기보다 부담으로 작용하는 경우가 많다. 성취와 강인함에 대한 요구는 청년 세대의 정신적 스트레스를 가중시키고 있다.</p>
+  </div>
+</section>
+
+<section id="s9">
+  <div class="bg" style="background-image:url('zurag9.png')"></div>
+  <div class="tint"></div><div class="band"></div>
+  <div class="cap cc">
+    <h2>마음의 균형</h2>
+    <p>우리는 불안을 인식하고, 그 위를 타는 세대다.</p>
+  </div>
+</section>
+
+<section id="s10">
+  <div class="bg" style="background-image:url('zurag10-2.png')"></div>
+  <div class="tint"></div><div class="band"></div>
+  <div class="cap bl">
+    <h2>당신의 파도는 무엇인가요?</h2>
+    <p>우리, 이 폭풍을 함께 서핑해요.</p>
+  </div>
+</section>
+
+<footer> &copy; 25100967 문흐징 | #Mental_Health</footer>
+</body>
+</html>
